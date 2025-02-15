@@ -20,8 +20,52 @@ header{
     position: fixed;
     top: 0;
     z-index: 1;
+    
 }
 
+/* NAV STYLES */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo h1{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.logo  img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.search-icon{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+}
 
 
 /* MAIN STYLES  */
