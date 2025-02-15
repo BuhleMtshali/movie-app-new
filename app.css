@@ -1,0 +1,7 @@
+:root{
+    --font-family:"Be Vietnam Pro", serif;
+}
+
+*{
+    font-family: var(--font-family);
+}
