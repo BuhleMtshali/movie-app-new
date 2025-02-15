@@ -19,7 +19,7 @@ body{
 header{
     height: 100px;
     width: 100%;
-    background-color:crimson;
+    background-color: transparent;
     overflow: hidden;
     position: fixed;
     top: 0;

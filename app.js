@@ -1,3 +1,9 @@
+
+//Adding an event listner to the logo div
+document.getElementById('logo').addEventListener('click', function() {
+    location.reload()
+})
+
 //function for showing the input bar
 document.getElementById('submit-btn').addEventListener('click', () => {
     const searchInput = document.getElementById('search-input');
@@ -23,3 +29,4 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+
