@@ -6,6 +6,10 @@
     font-family: var(--font-family);
 }
 
+*:focus{
+    outline: none;
+}
+
 body{
     margin: 0
 }
@@ -66,6 +70,17 @@ button img{
     object-fit: cover;
     object-position: center;
 }
+
+#search-input{
+    padding: 10px 16px;
+    width: 100%;
+    border: 0 0 0 2px 0;
+    border-radius: 17px;
+    background: none;
+    /* opacity: 0; */
+    transition: width 0.4s ease-in-out, opacity 0.3s ease-in-out;
+}
+
 
 
 /* MAIN STYLES  */
