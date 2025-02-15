@@ -1,3 +1,6 @@
+//Variables
+
+
 
 //Adding an event listner to the logo div
 document.getElementById('logo').addEventListener('click', function() {
@@ -14,8 +17,19 @@ document.getElementById('submit-btn').addEventListener('click', () => {
     }
 })
 
+//responsive navbar
+document.getElementById('toggle-btn').addEventListener('click', () => {
+    const middNavBar = document.getElementById('middle-nav');
+    const searchBar = document.getElementById('search-icon-container');
 
-//function for the avtive links 
+    //if btn is clicked
+    middNavBar.classList.toggle('responsive')
+    searchBar.classList.toggle('responsive-search');
+})
+
+
+
+//function for the active links 
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.middle-nav a');
 

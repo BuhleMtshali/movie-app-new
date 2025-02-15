@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Movie Search App</title>
 <link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="responsive.css">
 <link rel="shortcut icon" href="assets/imgs/camera-movie-regular-36.png" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,17 +21,20 @@
             <h1>TrendingHub</h1>
             <img src="assets/imgs/popcorn.png" alt="popcorn icon">
         </div>
-        <div class="middle-nav">
+        <div class="middle-nav" id="middle-nav">
             <a href="#">Home</a>
             <a href="#">TV Shows</a>
             <a href="#">Movies</a>
             <a href="#">Upcoming</a>
         </div>
-        <div class="search-icon">
+        <div class="search-icon" id="search-icon-container">
             <input type="search" name="search-input" id="search-input">
             <button id="submit-btn" class="submit-btn">
             <img src="assets/imgs/search-icon.png" alt="search icon">
             </button>
+        </div>
+        <div class="responsive-toggle">
+        <img src="assets/imgs/hamburger.png" alt="hamburger menu" id="toggle-btn">
         </div>
     </nav>
 </header>
