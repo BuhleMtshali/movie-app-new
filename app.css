@@ -56,30 +56,41 @@ nav{
 .search-icon{
     display: flex;
     align-items: center;
+    position: relative;
 }
 
-button{
+.submit-btn{
     background: none;
     border: none;
     cursor: pointer;
+    padding: 5px;
 }
 
-button img{
-    width: 40px;
-    height: 40px;
+.submit-btn img{
+    width: 30px;
+    height: 30px;
     object-fit: cover;
     object-position: center;
 }
 
 #search-input{
+    width: 0;
+    opacity: 0;
     padding: 10px 16px;
-    width: 100%;
-    border: 0 0 0 2px 0;
+    border: none;
+    border-bottom: 2px solid transparent;
     border-radius: 17px;
     background: none;
-    /* opacity: 0; */
-    transition: width 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    transition: width 0.4s ease-in-out, opacity 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
 }
+
+/* To make the search icon visible */
+#search-input.visible{
+ width: 100%;
+opacity: 1;
+ border-bottom: 2px solid #333;
+}
+
 
 
 
