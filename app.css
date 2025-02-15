@@ -19,7 +19,7 @@ body{
 header{
     height: 100px;
     width: 100%;
-    background-color: cadetblue;
+    background-color:crimson;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -52,6 +52,24 @@ nav{
     object-fit: cover;
     object-position: center;
 }
+
+.middle-nav {
+    display: flex;
+    align-items: center;
+}
+
+.middle-nav a{
+    text-decoration: none;
+    padding: 0 25px;
+    color: black;
+    font-size: 1.6rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.middle-nav a.active{
+    font-weight: bold;
+}
+
 
 .search-icon{
     display: flex;
