@@ -147,12 +147,49 @@ main h1{
 }
 /* THIS IS THE DIV THAT WILL SHOW THE CLICKED MOVIE/SERIES */
 .top-container{
-    background-color: darkcyan;
-    width: 100%;
+    background-image: url("assets/render-imgs/placeholder.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    width: 100vh;
     height: 500px;
     margin: auto;
     position: fixed;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.text-container{
+    width: 50%;
+}
+p .brief-description{
+    word-wrap: break-word;
+}
+
+/* top container btns */
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.buttons button{
+    padding: 8px 23px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 17px;
+    font-weight: 500;
+}
+
+.buttons button i{
+    padding-left: 8px;
+    font-weight: bold;
+}
+
+
 
 /* Tending movies div*/
 .trending-movies-container{
@@ -197,3 +234,4 @@ main h1{
     top: 25px;
     left: 15px;
 }
+
