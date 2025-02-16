@@ -28,4 +28,11 @@ document.getElementById('toggle-btn').addEventListener('click', () => {
 })
 
 
+//CLOSE MODAL BTN
+const closeModalBtn = document.getElementById('close-icon');
+let modalWindow = document.getElementById('modal-window');
 
+//function for closing the modal
+closeModalBtn.addEventListener('click', () => {
+    modalWindow.style.display = "none"
+})
