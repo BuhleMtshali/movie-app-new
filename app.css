@@ -4,6 +4,7 @@
 
 *{
     font-family: var(--font-family);
+    box-sizing: border-box;
 }
 
 *:focus{
@@ -22,7 +23,8 @@ body{
 header{
     height: 100px;
     width: 100%;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: deeppink;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -134,4 +136,102 @@ opacity: 1;
 main{
     position: relative;
     top: 100px;
+}
+
+/* example styles */
+.slideshow img, .column img{
+    /* height: 250px; */ 
+    /* width: 100%; */
+    object-fit: cover;
+    object-position: center;
+}
+
+/* slideshow container */
+.slideshow-container{
+    position: relative;
+    max-width: 100%;
+}
+
+/* hiding the images by default */
+.slideshow{
+    display: none;
+}
+
+/* Adding a curso when hovering over the thumbmail images */
+.cursor{
+    cursor: pointer;
+}
+
+/* Next and previous buttons */
+.prev,
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    user-select: none;
+    border-radius:  0 3px 3px 0;
+}
+
+/* positioning the next button */
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* on hover , adding a big of bg-color with a bit of see through*/
+.prev:hover,
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* styling the number text */
+.numberText{
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* container for the caption container */
+.caption-container{
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+}
+
+/* row container */
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* six colums side by side */
+.column{
+    float: left;
+    width: 16.66%;
+    height: 300px;
+}
+
+.column img{
+    height: 100%;
+}
+
+
+/* adding a transparency effect for the thumbail images */
+.demo{
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+}
+
+.active, 
+.demo:hover{
+    opacity: 1;
 }

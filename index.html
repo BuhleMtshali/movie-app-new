@@ -18,20 +18,20 @@
 <header>
     <nav>
         <div class="logo" id="logo">
-            <h1>TrendingHub</h1>
-            <img src="assets/imgs/popcorn.png" alt="popcorn icon">
+        <h1>TrendingHub</h1>
+        <img src="assets/imgs/popcorn.png" alt="popcorn icon">
         </div>
         <div class="middle-nav" id="middle-nav">
-            <a href="#">Home</a>
-            <a href="#">TV Shows</a>
-            <a href="#">Movies</a>
-            <a href="#">Upcoming</a>
+        <a href="#">Home</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Movies</a>
+        <a href="#">Upcoming</a>
         </div>
         <div class="search-icon" id="search-icon-container">
-            <input type="search" name="search-input" id="search-input" placeholder="The Mummy...">
-            <button id="submit-btn" class="submit-btn">
-            <img src="assets/imgs/search-icon.png" alt="search icon">
-            </button>
+        <input type="search" name="search-input" id="search-input" placeholder="The Mummy...">
+        <button id="submit-btn" class="submit-btn">
+        <img src="assets/imgs/search-icon.png" alt="search icon">
+        </button>
         </div>
         <div class="responsive-toggle">
         <img src="assets/imgs/hamburger.png" alt="hamburger menu" id="toggle-btn">
@@ -39,7 +39,94 @@
     </nav>
 </header>
 <main>
+    <div class="slideshow-container">
 
+
+        <!-- full width images with the text -->
+        <div class="slideshow">
+            <div class="numberText">1 / 6</div>
+            <img src="assets/example-img/pic-1.jpg" alt="">
+        </div>
+        <!-- ↑END OF 1ST SLIDESHOW -->
+
+        <div class="slideshow">
+            <div class="numberText">2 / 6</div>
+            <img src="assets/example-img/pic-2.jpg" alt="">
+        </div>
+        <!-- ↑END OF 2nd SLIDESHOW -->
+
+        <div class="slideshow">
+            <div class="numberText">3 / 6</div>
+            <img src="assets/example-img/pic-3.jpg" alt="">
+        </div>
+        <!-- ↑END OF 3rd SLIDESHOW -->
+
+        <div class="slideshow">
+            <div class="numberText">4 / 6</div>
+            <img src="assets/example-img/pic-4.jpg" alt="">
+        </div>
+        <!-- ↑END OF 4th SLIDESHOW -->
+
+        <div class="slideshow">
+            <div class="numberText">5 / 6</div>
+            <img src="assets/example-img/pic-5.jpg" alt="">
+        </div>
+        <!-- ↑END OF 5th SLIDESHOW -->
+
+        <div class="slideshow">
+            <div class="numberText">6 / 6</div>
+            <img src="assets/example-img/pic-6.jpg" alt="">
+        </div>
+        <!-- ↑END OF 1ST SLIDESHOW -->
+
+        <!-- NEXT AND PREVIOUS BUTTONS -->
+        <a class="prev" onclick="plusSlides(-1)"> &#10094; </a>
+        <a class="next" onclick="plusSlides(1)"> &#10095; </a>
+
+        <!-- Image Text -->
+         <div class="caption-container">
+            <p class="caption" id="caption">test</p>
+         </div>
+
+        <!-- Thumbmail images -->
+         <div class="row">
+
+            <div class="column">
+            <img class="demo cursor" src="assets/example-img/pic-1.jpg" width="100%" onclick="currentSlide(1)" alt="img-1">
+            </div>
+            <!-- end of 1st column -->
+
+            <div class="column">
+            <img class="demo cursor" src="assets/example-img/pic-2.jpg" width="100%" onclick="currentSlide(2)" alt="img-2">
+            </div>
+            <!-- end of 2nd column -->
+
+            <div class="column">
+            <img class="demo cursor" src="assets/example-img/pic-3.jpg" width="100%" onclick="currentSlide(3)" alt="img-3">
+            </div>
+            <!-- end of 3rd column -->
+
+            <div class="column">
+            <img class="demo cursor" src="assets/example-img/pic-4.jpg" width="100%" onclick="currentSlide(4)" alt="img-4">
+            </div>
+            <!-- end of 4th column -->
+
+            <div class="column">
+            <img class="demo cursor" src="assets/example-img/pic-5.jpg" width="100%" onclick="currentSlide(5)" alt="img-5">
+            </div>
+            <!-- end of 5th column -->
+
+            <div class="column">
+            <img class="demo cursor" src="assets/example-img/pic-6.jpg" width="100%" onclick="currentSlide(6)" alt="img-6">
+            </div>
+            <!-- end of sixth column -->
+
+
+         </div>
+         <!-- ↑ END OF ROW CONTAINER -->
+
+    </div>
+    <!--↑ end of slide show container -->
 </main>   
 </div>
 <!-- ↑ END OF CONTAINER -->
