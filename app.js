@@ -36,3 +36,4 @@ let modalWindow = document.getElementById('modal-window');
 closeModalBtn.addEventListener('click', () => {
     modalWindow.style.display = "none"
 })
+

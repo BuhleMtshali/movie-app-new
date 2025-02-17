@@ -26,7 +26,8 @@ html, body {
 header{
     height: 100px;
     width: 100%;
-    background-color:whitesmoke;
+    /* background-color:whitesmoke; */
+    background: transparent;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -139,6 +140,7 @@ main{
     position: relative;
     top: 100px;
     width: 100%;
+    max-width: 100%;
     margin: auto;
     height: 100%;
 }
@@ -147,13 +149,10 @@ main h1{
 }
 /* THIS IS THE DIV THAT WILL SHOW THE CLICKED MOVIE/SERIES */
 .top-container{
-    background-image: url("assets/render-imgs/placeholder.png");
-    background-repeat: no-repeat;
-    background-position: top right;
+    background: url("assets/render-imgs/image.png");
     background-size: cover;
-    width: 100vh;
-    height: 500px;
-    margin: auto;
+    height: 700px;
+    width: 100%;
     position: fixed;
     padding: 20px;
     display: flex;
@@ -195,7 +194,7 @@ p .brief-description{
 .trending-movies-container{
     background-color: darkmagenta;
     position: relative;
-    top: 500px;
+    top: 700px;
     height: 600px;
 }
 
@@ -203,7 +202,7 @@ p .brief-description{
 .trending-series-container{
     background-color:darkslateblue;
     position: relative;
-    top: 500px;
+    top: 700px;
     height: 600px;
 }
 
@@ -216,7 +215,7 @@ p .brief-description{
     width: 50%;
     height: 50%;
     transform: translate(-50%, -50%);
-    background-color: cornflowerblue; 
+    /* background-color: cornflowerblue;  */
     display: none;   
 }
 
